@@ -40,8 +40,8 @@ export default {
 <style scoped>
 .sitename {
   font-family: fantasy;
-  font-size: 28px;
-  font-weigh: bold;
+  font-size: 20px;
+  font-weight: bold;
   color: snow;
 }
 </style>
