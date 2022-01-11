@@ -1,53 +1,78 @@
 <template>
   <div>
-    <v-card class="mx-auto mt-5" max-width="344">
-      <v-img
-        src="https://cdn.vuetifyjs.com/images/cards/sunshine.jpg"
-        height="200px"
-      ></v-img>
+    <v-container>
+      <v-row>
+        <v-col v-for="(bias, index) in biases" :key="index">
+          <v-card class="mx-auto mt-5" max-width="344" :color="bias.color">
+            <v-img
+              :src="require(`@/assets/${bias.id}.png`)"
+              height="200px"
+            ></v-img>
 
-      <v-card-title> Fundamental Attribution Error </v-card-title>
+            <v-card-title> {{ bias.Name }} </v-card-title>
 
-      <v-card-subtitle> Environment >>> Personality </v-card-subtitle>
+            <v-card-subtitle> {{ bias.Subtitle }} </v-card-subtitle>
 
-      <v-card-actions>
-        <v-btn color="orange lighten-2" text> Learn More </v-btn>
+            <v-card-actions>
+              <v-btn color="" text> Learn More </v-btn>
 
-        <v-spacer></v-spacer>
+              <v-spacer></v-spacer>
 
-        <v-btn icon @click="show = !show">
-          <v-icon>{{ show ? "mdi-chevron-up" : "mdi-chevron-down" }}</v-icon>
-        </v-btn>
-      </v-card-actions>
+              <v-btn icon @click="bias.show = !bias.show">
+                <v-icon>{{
+                  bias.show ? "mdi-chevron-up" : "mdi-chevron-down"
+                }}</v-icon>
+              </v-btn>
+            </v-card-actions>
 
-      <v-expand-transition>
-        <div v-show="show">
-          <v-divider></v-divider>
+            <v-expand-transition>
+              <div v-show="bias.show">
+                <v-divider></v-divider>
 
-          <v-card-text>
-            Tendency for people to under-emphasize situational and environmental
-            explanations for an individual's observed behavior while
-            over-emphasizing dispositional and personality-based explanations.
-          </v-card-text>
-          <p class="ml-5">
-            Watch a <v-icon class="mr-2">mdi-video-box</v-icon>
-            <a href="google.com">here </a>
-          </p>
-          <p class="ml-5">
-            Read a <v-icon class="mr-2">mdi-note-text-outline</v-icon>
-            <a href="google.com">here</a>
-          </p>
-        </div>
-      </v-expand-transition>
-    </v-card>
+                <v-card-text>
+                  {{ bias.Definition }}
+                </v-card-text>
+                <p class="ml-5">
+                  Watch a <v-icon class="mr-2">mdi-video-box</v-icon>
+                  <a :href="bias.videolink">here </a>
+                </p>
+                <p class="ml-5">
+                  Read a <v-icon class="mr-2">mdi-note-text-outline</v-icon>
+                  <a :href="bias.paperlink">here</a>
+                </p>
+              </div>
+            </v-expand-transition>
+          </v-card>
+        </v-col>
+      </v-row>
+    </v-container>
   </div>
 </template>
 
 <script>
+import * as d3 from "d3";
+import * as _ from "lodash";
+//const accent = d3.scaleOrdinal(d3.schemeAccent);
 export default {
   data: () => ({
-    show: false,
+    pathtofile: "./biasesdata.csv",
+    biases: [],
   }),
+  methods: {
+    loadData() {
+      d3.csv(this.pathtofile).then((data) => {
+        console.log(data);
+        _.mapValues(data, (item) => {
+          item.show = false;
+          //item.color = ;
+        });
+        this.biases = data;
+      });
+    },
+  },
+  mounted() {
+    this.loadData();
+  },
 };
 </script>
 
