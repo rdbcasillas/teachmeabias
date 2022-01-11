@@ -5,7 +5,7 @@
         <v-col v-for="(bias, index) in biases" :key="index">
           <v-card class="mx-auto mt-5" max-width="344" :color="bias.color">
             <v-img
-              :src="require(`@/assets/${bias.id}.png`)"
+              :src="require(`@/assets/Images/${bias.id}.png`)"
               height="200px"
             ></v-img>
 

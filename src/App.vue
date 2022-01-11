@@ -1,12 +1,12 @@
 <template>
   <v-app>
-    <v-app-bar app color="primary" dark>
+    <v-app-bar app color="indigo darken-1" dark>
       <div class="d-flex align-center"></div>
 
-      <v-spacer></v-spacer>
+      <v-spacer class="sitename">Teach Me A Bias</v-spacer>
 
       <v-btn
-        href="https://github.com/vuetifyjs/vuetify/releases/latest"
+        href="https://en.wikipedia.org/wiki/List_of_cognitive_biases"
         target="_blank"
         text
       >
@@ -36,3 +36,12 @@ export default {
   }),
 };
 </script>
+
+<style scoped>
+.sitename {
+  font-family: fantasy;
+  font-size: 28px;
+  font-weigh: bold;
+  color: snow;
+}
+</style>
