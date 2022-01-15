@@ -16,20 +16,16 @@
     </v-app-bar>
 
     <v-main>
-      <Home />
+      <router-view></router-view>
     </v-main>
   </v-app>
 </template>
 
 <script>
-import Home from "./components/Home";
-
 export default {
   name: "App",
 
-  components: {
-    Home,
-  },
+  components: {},
 
   data: () => ({
     //
