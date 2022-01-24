@@ -3,7 +3,9 @@
     <v-app-bar app color="indigo darken-1" dark>
       <div class="d-flex align-center"></div>
 
-      <v-spacer class="sitename">Teach Me A Bias</v-spacer>
+      <v-spacer class="sitename"
+        ><a href="/" class="sitename">Teach Me A Bias</a>
+      </v-spacer>
 
       <v-btn
         href="https://en.wikipedia.org/wiki/List_of_cognitive_biases"
@@ -38,6 +40,9 @@ export default {
   font-family: fantasy;
   font-size: 20px;
   font-weight: bold;
+  color: snow;
+}
+a {
   color: snow;
 }
 </style>
