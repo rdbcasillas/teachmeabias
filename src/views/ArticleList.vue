@@ -11,7 +11,7 @@
             >
           </p>
           <v-row>
-            <router-link class="listitem" to="explorable">
+            <router-link class="listitem" to="attentionbias">
               <v-hover v-slot="{ hover }">
                 <v-list-item
                   :class="

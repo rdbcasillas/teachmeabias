@@ -1,7 +1,7 @@
 import Vue from "vue";
 import VueRouter from "vue-router";
 import Home from "../views/Home.vue";
-import Explorable from "../views/Explorable.vue";
+import AttentionalBias from "../views/AttentionalBias.vue";
 import ArticleList from "../views/ArticleList.vue";
 
 Vue.use(VueRouter);
@@ -13,9 +13,9 @@ const routes = [
     component: Home,
   },
   {
-    path: "/explorable",
-    name: "Explorable",
-    component: Explorable,
+    path: "/attentionbias",
+    name: "AttentionalBias",
+    component: AttentionalBias,
   },
   {
     path: "/articles",
