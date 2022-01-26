@@ -206,19 +206,56 @@
               when combined with confirmation bias.</span
             >
           </p>
-          <h5>Attentional Bias in Anxiety</h5>
+          <h5>Attentional bias in anxiety</h5>
           <p>
             Attentional bias is also shown to be exhibited by people with high
-            levels of anxiety. Clinically anxious people pay more attention
-            towards "threat cues" than normal people. They have a tendency to
-            interpret ambiguous information in a threatening manner and also
-            happen to have an increased propensity to remember dangerous
-            experiences. This bias can then create a positive feedback loop for
-            someone with clinical anxiety. More attention towards threatening
-            cues leads to more anxiety which in turn makes their attention more
-            biased towards threatening cues (which then further increases
-            anxiety).
+            levels of anxiety. Multiple studies have found that clinically
+            anxious people pay more attention towards "threat cues" than normal
+            people. They have a tendency to interpret ambiguous (neutral for
+            most people) information in a threatening manner and also happen to
+            have an increased propensity to remember dangerous experiences. This
+            bias can then create a positive feedback loop for someone with
+            clinical anxiety. More attention towards threatening cues leads to
+            more anxiety which in turn makes their attention more biased towards
+            threatening cues (which then further increases anxiety).
           </p>
+          <h5>Attentional bias in our cravings?</h5>
+          <p>
+            Our environment plays a huge role in manipulating our behavior. This
+            manipulation becomes clear whenever we enter a grocery store. We
+            arrive with healthy intentions to avoid buying junk food but once
+            the
+            <a href="https://www.lesswrong.com/tag/superstimuli"
+              >Superstimuli</a
+            >
+            starts entering our vision, we find it hard to control ourselves.
+            This is especially true for items that we promise ourselves to not
+            buy (chips, ice cream etc.) But it is not just the grocery store
+            itself that is trying to entice you. Our minds develop a bias
+            towards our cravings and we tend to notice them more than the items
+            we don't actively crave (fruits for instance). Researchers have
+            extesively studied attentional bias in addictive behavior using
+            clever techniques like
+            <a href="https://en.wikipedia.org/wiki/Stroop_effect"
+              >Stroop effect
+            </a>
+            and
+            <a href="https://en.wikipedia.org/wiki/Dot-probe_paradigm"
+              >Dot-probe paradigm</a
+            >. Consistently, results show that smokers and drug users in general
+            develop attentional bias which makes it harder for them to let go of
+            their addiction.
+          </p>
+          <blockquote>
+            <p>
+              Drug addiction is also an example of attentional bias in that
+              certain memories or objects can prompt intense cravings for one's
+              drug of choice. It is easier for individuals who experience this
+              to relapse and begin their drug use again, because the urges given
+              off by that initial stimuli can prove to be too strong to curb
+            </p>
+          </blockquote>
+          <hr />
           <h5>References</h5>
           <ol style="list-style: decimal inside">
             <li>

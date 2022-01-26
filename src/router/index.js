@@ -2,6 +2,7 @@ import Vue from "vue";
 import VueRouter from "vue-router";
 import Home from "../views/Home.vue";
 import Explorable from "../views/Explorable.vue";
+import ArticleList from "../views/ArticleList.vue";
 
 Vue.use(VueRouter);
 
@@ -15,6 +16,11 @@ const routes = [
     path: "/explorable",
     name: "Explorable",
     component: Explorable,
+  },
+  {
+    path: "/articles",
+    name: "ArticleList",
+    component: ArticleList,
   },
   {
     path: "/about",

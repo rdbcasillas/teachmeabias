@@ -7,6 +7,9 @@
         ><a href="/" class="sitename">Teach Me A Bias</a>
       </v-spacer>
 
+      <v-spacer class="sitename"
+        ><a href="/articles" class="sitename">Articles</a>
+      </v-spacer>
       <v-btn
         href="https://en.wikipedia.org/wiki/List_of_cognitive_biases"
         target="_blank"
