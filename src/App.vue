@@ -10,13 +10,8 @@
       <v-spacer class="sitename"
         ><a href="/articles" class="sitename">Articles</a>
       </v-spacer>
-      <v-btn
-        href="https://en.wikipedia.org/wiki/List_of_cognitive_biases"
-        target="_blank"
-        text
-      >
+      <v-btn href="/resources" target="_blank" text>
         <span class="mr-2">Resources</span>
-        <v-icon>mdi-open-in-new</v-icon>
       </v-btn>
     </v-app-bar>
 
